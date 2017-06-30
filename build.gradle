@@ -14,5 +14,6 @@ ext.libraries = [
 		jooqCodegen: 'org.jooq:jooq-codegen:3.9.3',
 		jooq       : 'org.jooq:jooq:3.9.3',
 		guice      : 'com.google.inject:guice:4.1.0',
-		inject     : 'javax.inject:javax.inject:1'
+		inject     : 'javax.inject:javax.inject:1',
+		spock      : 'org.spockframework:spock-core:1.1-groovy-2.4'
 ]

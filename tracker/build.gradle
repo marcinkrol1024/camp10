@@ -2,6 +2,7 @@ group 'sages.bootcamp.camp10'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'groovy'
 
 sourceCompatibility = 1.8
 
@@ -25,6 +26,7 @@ dependencies {
 	compile libraries.postgres
 	compile libraries.guice
 	compile libraries.inject
+	testCompile libraries.spock
 }
 
 import org.jooq.util.GenerationTool
