@@ -30,3 +30,12 @@ Assumptions:
 TASK 2
 ======
 Create spock parametrized tests for adding some users
+
+TASK 3
+======
+1. Create new project with gradle
+2. Create some sql schema
+3. Execute schema on db
+4. Generate schema classes with jooq
+5. Create DI configuration for DSLContext
+6. Use the DI configuration to create spock test and test simple jooq usage
