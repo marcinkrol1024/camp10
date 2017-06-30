@@ -26,3 +26,7 @@ Assumptions:
 * a task can have an assignee
 * every task is assigned to a project
 * every task can consist of multiple sub tasks*
+
+TASK 2
+======
+Create spock parametrized tests for adding some users
