@@ -1,10 +1,19 @@
 package sages.bootcamp.spock.example
 
+import org.jooq.DSLContext
+import sages.bootcamp.tracker.jooq.di.PersistenceModule
+import spock.guice.UseModules
 import spock.lang.Specification
 import spock.lang.Unroll
 
+import javax.inject.Inject
+
 @Unroll
+@UseModules(PersistenceModule.class)
 class ExampleSpec extends Specification {
+
+	@Inject
+	DSLContext dslContext
 
 	def "should test adding left: #left and right: #right"() {
 		when:

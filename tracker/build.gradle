@@ -27,6 +27,7 @@ dependencies {
 	compile libraries.guice
 	compile libraries.inject
 	testCompile libraries.spock
+	testCompile libraries.spockGuice
 }
 
 import org.jooq.util.GenerationTool
