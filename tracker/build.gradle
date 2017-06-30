@@ -9,5 +9,27 @@ repositories {
 	mavenCentral()
 }
 
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+
+	dependencies {
+		classpath libraries.jooqCodegen
+		classpath libraries.postgres
+	}
+}
+
 dependencies {
+}
+
+import org.jooq.util.GenerationTool
+
+task jooqCodegen(type: JooqCodegen)
+
+class JooqCodegen extends DefaultTask {
+	@TaskAction
+	def jooqCodegen() {
+		GenerationTool.main("jooq-codegen.xml")
+	}
 }

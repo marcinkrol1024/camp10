@@ -10,4 +10,6 @@ repositories {
 }
 
 ext.libraries = [
+		postgres   : 'org.postgresql:postgresql:42.1.1',
+		jooqCodegen: 'org.jooq:jooq-codegen:3.9.3'
 ]
