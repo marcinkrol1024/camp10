@@ -22,6 +22,9 @@ buildscript {
 
 dependencies {
 	compile libraries.jooq
+	compile libraries.postgres
+	compile libraries.guice
+	compile libraries.inject
 }
 
 import org.jooq.util.GenerationTool
