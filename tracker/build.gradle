@@ -21,6 +21,7 @@ buildscript {
 }
 
 dependencies {
+	compile libraries.jooq
 }
 
 import org.jooq.util.GenerationTool
